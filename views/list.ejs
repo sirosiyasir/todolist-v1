@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>To Do List</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<%- include("header") -%>
 
-  <body>
     <div class="box" id="heading">
-      <h1><%= kindOfDay %></h1>
+      <h1><%= listTitle %></h1>
     </div>
 
     <div class="box">
@@ -21,7 +14,7 @@
 
       <% } %>
 
-      <!-- action'daki '/' roout route olarak bilinir -->
+      <!-- action'daki '/' roout route(kök) olarak bilinir -->
       <form class="item" action="/" method="post">
         <input
           type="text"
@@ -29,8 +22,9 @@
           placeholder="New Item"
           autocomplete="off"
         />
-        <button type="submit" name="button">+</button>
+        <button type="submit" name="list" value=<%= listTitle %>>+</button>
       </form>
     </div>
-  </body>
-</html>
+  
+    <!-- Hazır footer ve header şablonları oluşturduk -->
+    <%- include("footer") -%>

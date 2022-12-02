@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html {
   background-color: #eae9fd;
 
   /* web sitesinin renklerini %50 %50 iki renk yapar ve arka planı 65deg döndürür */
   background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #eae9fd 50%);
-  min-height: 1000px;
+
+  /* başlangıçta min-height: 1000px'di ama daha sonra benim bilgisayarım ekran boyutlarında 1000px'ken ekranda kaydırma çubukları çıkmaya başladı o yüzden 756'ya indirdim */
+  min-height: 756px;
   font-family: "helvetica neue";
 }
 
 h1 {
   color: #fff;
   padding: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .box {
